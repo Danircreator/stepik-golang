@@ -12,7 +12,7 @@ func main() {
 	fmt.Scanln(&v)
 	fmt.Scanln(&t)
 
-	result = (v * t) - l
+	result = ((v*t)%l + l) % l
 
 	fmt.Println(result)
 
